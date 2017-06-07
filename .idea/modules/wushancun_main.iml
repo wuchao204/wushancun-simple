@@ -23,6 +23,16 @@
     </facet>
     <facet type="Spring" name="Spring">
       <configuration>
+        <fileset id="web application context" name="MVC application context" removed="true">
+          <file>file://$MODULE_DIR$/../../src/main/resources/config/spring_base.xml</file>
+          <file>file://$MODULE_DIR$/../../src/main/resources/config/spring_servlet.xml</file>
+          <file>file://$MODULE_DIR$/../../src/main/resources/config/spring_ehcache.xml</file>
+        </fileset>
+        <fileset id="web DispatcherServlet servlet context" name="MVC DispatcherServlet servlet context" removed="true">
+          <file>file://$MODULE_DIR$/../../src/main/resources/config/spring_base.xml</file>
+          <file>file://$MODULE_DIR$/../../src/main/resources/config/spring_servlet.xml</file>
+          <file>file://$MODULE_DIR$/../../src/main/resources/config/spring_ehcache.xml</file>
+        </fileset>
         <fileset id="fileset" name="Spring Application Context" removed="false">
           <file>file://$MODULE_DIR$/../../src/main/resources/config/spring_base.xml</file>
           <file>file://$MODULE_DIR$/../../src/main/resources/config/spring_ehcache.xml</file>
@@ -34,7 +44,9 @@
       <configuration>
         <setting name="validation-enabled" value="true" />
         <setting name="provider-name" value="" />
-        <datasource-mapping />
+        <datasource-mapping>
+          <factory-entry name="persistenceUnit" value="dataSource" />
+        </datasource-mapping>
         <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/../../src/main/resources/META-INF/persistence.xml" />
       </configuration>
     </facet>
