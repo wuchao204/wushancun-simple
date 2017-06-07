@@ -11,13 +11,25 @@
            http://www.springframework.org/schema/mvc
            http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
 
-    <!-- 配置自动扫描的包 -->
-    <context:component-scan base-package="com.lucky.wushancun"></context:component-scan>
+    <!-- 自定义注解映射的支持 -->
+    <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter"/>
 
-    <!-- 配置视图解析器：如何把handler方法 的返回值 解析为 实际的物理视图-->
-    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-        <property name="prefix" value="/views/"></property>
+    <!-- 扫描所有的controller -->
+    <context:component-scan base-package="com.lucky.wushancun.**.controller" />
+
+    <!-- InternalResourceViewResolver默认的就是JstlView所以这里就不用配置viewClass了 -->
+    <bean
+            class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/views"></property>
         <property name="suffix" value=".jsp"></property>
     </bean>
 
+    <!-- 错误拦截跳转-->
+    <bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+        <property name="exceptionMappings">
+            <props>
+                <prop key="java.lang.Exception">common/error</prop>
+            </props>
+        </property>
+    </bean>
 </beans>
