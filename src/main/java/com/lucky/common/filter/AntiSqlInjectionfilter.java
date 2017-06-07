@@ -1,15 +1,10 @@
 package com.lucky.common.filter;
 
+import javax.servlet.*;
+import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 import java.util.Enumeration;
 
-import javax.servlet.Filter;
-import javax.servlet.FilterChain;
-import javax.servlet.FilterConfig;
-import javax.servlet.ServletException;
-import javax.servlet.ServletRequest;
-import javax.servlet.ServletResponse;
-import javax.servlet.http.HttpServletRequest;
 /**
  * Created by lucky on 2017/6/7.
  */
@@ -26,7 +21,7 @@ public class AntiSqlInjectionfilter implements Filter {
     public void doFilter(ServletRequest args0, ServletResponse args1,
                          FilterChain chain) throws IOException, ServletException {
         HttpServletRequest req=(HttpServletRequest)args0;
-        HttpServletRequest res=(HttpServletRequest)args1;
+        //HttpServletRequest res=(HttpServletRequest)args1;
         //获得所有请求参数名
         Enumeration params = req.getParameterNames();
         String sql = "";

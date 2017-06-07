@@ -37,7 +37,7 @@ http://www.springframework.org/schema/context http://www.springframework.org/sch
         <!-- 用户名 -->
         <property name="username" value="${username}" />
         <!-- 密码 -->
-        <property name="password" value="${password}}" />
+        <property name="password" value="${password}" />
         <!-- 连接池启动时的初始值 -->
         <property name="initialSize" value="${initialSize}" />
         <!-- 连接池的最大值 -->
