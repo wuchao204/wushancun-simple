@@ -1,0 +1,19 @@
+group 'wushancun'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'war'
+
+sourceCompatibility = 1.5
+
+repositories {
+    mavenLocal() //本地缓存
+    maven { url 'http://maven.aliyun.com/nexus/content/groups/public' } //阿里云
+    mavenCentral() //中心库
+    maven { url 'http://oss.jfrog.org/artifactory/oss-snapshot-local' }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
