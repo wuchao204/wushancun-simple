@@ -16,6 +16,15 @@
         <param-value>wushancun</param-value>
     </context-param>
 
+    <!-- spring配置文件加载到web.xml-->
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>classpath*:config/spring_*.xml</param-value>
+    </context-param>
+
     <!--  利用Spring自带的过滤器解决乱码问题-->
     <filter>
         <filter-name>characterEncodingFilter</filter-name>
