@@ -62,11 +62,12 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>DispatcherServlet</servlet-name>
-        <url-pattern>/</url-pattern>
+        <url-pattern>*.do</url-pattern>
     </servlet-mapping>
 
     <!-- Session超时配置 -->
     <session-config>
         <session-timeout>30</session-timeout>
     </session-config>
+
 </web-app>

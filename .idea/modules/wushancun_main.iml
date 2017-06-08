@@ -50,7 +50,7 @@
       </configuration>
     </facet>
   </component>
-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_5" inherit-compiler-output="false">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_6" inherit-compiler-output="false">
     <output url="file://$MODULE_DIR$/../../build/classes/main" />
     <exclude-output />
     <content url="file://$MODULE_DIR$/../../src/main">
@@ -242,7 +242,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../libs/jbosscache-core-3.2.1.GA.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../libs/spring-websocket-4.3.5.RELEASE.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -251,7 +251,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../libs/jsr107cache-1.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../libs/servlet-api.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -386,7 +386,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../libs/spring-instrument-4.3.5.RELEASE.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../libs/spring-tx-4.3.5.RELEASE.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -395,7 +395,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../libs/spring-instrument-tomcat-4.3.5.RELEASE.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../libs/spring-web-4.3.5.RELEASE.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -458,7 +458,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../libs/spring-tx-4.3.5.RELEASE.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../libs/spring-instrument-4.3.5.RELEASE.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -467,7 +467,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../libs/spring-web-4.3.5.RELEASE.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../libs/spring-instrument-tomcat-4.3.5.RELEASE.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -494,7 +494,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../libs/spring-websocket-4.3.5.RELEASE.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../libs/jbosscache-core-3.2.1.GA.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -503,11 +503,21 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../libs/servlet-api.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../libs/jsr107cache-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../libs/jstl-1.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="Gradle: taglibs:standard:1.1.2" level="project" />
   </component>
 </module>
