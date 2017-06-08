@@ -16,7 +16,7 @@ import java.lang.reflect.Method;
  */
 @Controller
 public class SystemController extends BaseController{
-    private final String viewPath = "system";
+    private final String viewPath = "system/";
 
     @RequestMapping("/login")
     public String login(HttpServletRequest request, HttpServletResponse response){
